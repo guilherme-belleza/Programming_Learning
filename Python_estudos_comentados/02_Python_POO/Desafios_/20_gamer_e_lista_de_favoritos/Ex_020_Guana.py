@@ -38,7 +38,7 @@ class Gamer:
         print(box)
 
 
-j1 = Gamer('Guilherme Roger', 'NihIl')
+j1 = Gamer('Joãozim', 'MasterBluutn')
 j1.add_favoritos('Eden Ring')
 j1.add_favoritos('Nioh 2')
 j1.add_favoritos('Minecraft')

@@ -9,7 +9,7 @@ from ContaBancaria import ContaBancaria
 
 # Função principal: organiza a execução do programa e chama as partes necessárias para realizar o exercício.
 def main():
-    conta_1 = ContaBancaria(123, "Guilherme", 3000, chave="123456")
+    conta_1 = ContaBancaria(123, "João", 3000, chave="123456")
 #region
     #print(conta_1) # Saída -> Estado atual da conta {
                                                        # '_id': 123, 

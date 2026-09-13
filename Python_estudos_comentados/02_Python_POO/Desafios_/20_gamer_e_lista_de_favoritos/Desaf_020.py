@@ -34,7 +34,7 @@ class Gamer:
         )
         return box
 
-g1 = Gamer('Gui', 'NiHell', favoritos='Eldem Ring, LoL, Nioh 2, COD. ', )
+g1 = Gamer('João', 'João123', favoritos='Eldem Ring, LoL, Nioh 2, COD. ', )
 
 print(g1.ficha_gamer())
 

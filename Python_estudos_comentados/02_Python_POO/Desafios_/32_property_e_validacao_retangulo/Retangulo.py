@@ -82,7 +82,7 @@ class Retangulo:
         if not isinstance(valores, list):
             raise TypeError("VALORES devem ser passados em forma de lista")
         
-        # Verificando se foi passadi 2 valores.
+        # Verificando se foi passad0 2 valores.
         if len(valores) != 2:
             raise SyntaxError(f"Informe uma lista com 2 VALORES.")
 
@@ -97,7 +97,3 @@ class Retangulo:
         else:
             raise TypeError("A ALTURA deve ser um número.")
             
-
-        
-
-    

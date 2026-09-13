@@ -11,7 +11,7 @@ from rich import print, inspect
 class Funcionario:
     # Aributos de CLASSE --> Todos os objetos da classe vão receber esse atributo (seria algo comum em todos os objetos)
 
-    empresa = 'Kali_Linux' # Atributo que todos os objetos vão possuir.
+    empresa = 'Google' # Atributo que todos os objetos vão possuir.
 
 
 
@@ -37,7 +37,7 @@ class Funcionario:
 
 
 # Objetos
-c1 = Funcionario('Guilherme', 'T.I', 'Eng-Softwere')
+c1 = Funcionario('Daniel', 'T.I', 'Eng-Softwere')
 c2 = Funcionario('José', 'T.I', 'Chefe')
 print(c1.Apresentaçao())
 print(c2.Apresentaçao())

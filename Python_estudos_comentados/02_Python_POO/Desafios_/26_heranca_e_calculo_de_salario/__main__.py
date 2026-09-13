@@ -11,7 +11,7 @@ from rich import print, inspect
 
 # Função principal: organiza a execução do programa e chama as partes necessárias para realizar o exercício.
 def main():
-    empregado_pj = Horista('Guilherme', 28, 96)
+    empregado_pj = Horista('Carlos', 28, 96)
     print(empregado_pj.calcular_salario())
 
 

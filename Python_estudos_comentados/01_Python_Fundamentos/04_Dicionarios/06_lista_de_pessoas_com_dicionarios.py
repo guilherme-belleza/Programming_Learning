@@ -105,20 +105,3 @@ for p in pessoas:
         #Printamos na tela o nome e a idade direto!
         print(f'   -> {p["nome"]} tem {p["idade"]} anos.')#Podemos imprimir na tela pelas keys do dicionario.
 
-
-
-
-    
-        
-      
-
-
-
-    
-
-
-
-
-
-
-

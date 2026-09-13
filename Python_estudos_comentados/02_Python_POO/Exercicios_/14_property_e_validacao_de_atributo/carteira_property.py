@@ -26,4 +26,3 @@ class Carteira:
             self.__saldo = valor
             return self.__saldo
 
-

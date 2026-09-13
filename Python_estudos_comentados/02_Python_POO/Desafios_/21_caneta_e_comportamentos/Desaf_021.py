@@ -43,7 +43,7 @@ caneta2 = Caneta('vermelho')
 caneta1.abrir()
 caneta1.escrever('Olá Mundo 2')
 
-caneta2 = Caneta('Gatos são incriveis')
+caneta2 = Caneta('Boa Noite')
 
 
     
