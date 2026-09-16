@@ -1,0 +1,8 @@
+DATA: 13/09/2026
+git
+Git é um repositório local, onde podemos salvar nossos progressos feitos.
+
+DATA: 13/09/2026
+Scripstas
+123ssad123a
+
