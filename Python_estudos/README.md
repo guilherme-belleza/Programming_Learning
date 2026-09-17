@@ -6,19 +6,24 @@ Aqui estão reunidos exercícios, desafios, anotações e experimentos desenvolv
 
 ## 📚 Estrutura
 
-### Python
+### Python Fundamentos
 
-* `python_VS/Exercicios/02_Listas` — listas e operações com listas
-* `python_VS/Exercicios/03_Lacos_For_While` — `for`, `while` e `range`
-* `python_VS/Exercicios/04_Dicionarios` — dicionários e tratamento de exceções relacionado
-* `python_VS/Exercicios/05_Tuplas` — tuplas, ordenação e `lambda`
-* `python_VS/Exercicios/06_Funcoes` — funções, parâmetros, retorno, `*args`, validações e pequenos sistemas
+* `Python_estudos/01_Python_Fundamentos/02_Listas` — listas e operações com listas
+* `Python_estudos/01_Python_Fundamentos/03_Lacos_For_While` — `for`, `while` e `range`
+* `Python_estudos/01_Python_Fundamentos/04_Dicionarios` — dicionários e tratamento de exceções relacionado
+* `Python_estudos/01_Python_Fundamentos/05_Tuplas` — tuplas, ordenação e `lambda`
+* `Python_estudos/01_Python_Fundamentos/06_Funcoes` — funções, parâmetros, retorno, `*args`, validações e pequenos sistemas
 
 ### Programação Orientada a Objetos
 
-* `Poo_Python/Exercicios_` — exercícios organizados pelo conceito principal de POO praticado
-* `Poo_Python/Desafios_` — desafios com o tema principal indicado no nome
-* `Poo_Python/Rich_Lib` — estudos e experimentos com a biblioteca Rich
+* `Python_estudos/02_Python_POO/Exercicios_` — exercícios organizados pelo conceito principal de POO praticado
+* `Python_estudos/02_Python_POO/Desafios_` — desafios com o tema principal indicado no nome
+* `Python_estudos/02_Python_POO/Rich_Lib` — estudos e experimentos com a biblioteca Rich
+
+### Python Arquivos e Dados
+
+* `Python_estudos/03_Python_Arquivos_Dados/open_arquivos` — estudos sobre leitura e escrita de arquivos utilizando `open()`
+* `Python_estudos/03_Python_Arquivos_Dados/pathlib` — estudos sobre caminhos, arquivos e diretórios utilizando `pathlib`
 
 ## 🎯 Organização
 
