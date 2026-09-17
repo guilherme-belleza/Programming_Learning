@@ -1,4 +1,4 @@
-# Linux — Guia do Básico ao Avançado
+# Linux — Guia Básico
 
 ## 1. O que é o Linux
 
