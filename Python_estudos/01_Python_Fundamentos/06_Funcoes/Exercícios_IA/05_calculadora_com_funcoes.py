@@ -64,5 +64,3 @@ if op == '/':
         print(f'Impossivél dividir por 0')
     
     
-    
-

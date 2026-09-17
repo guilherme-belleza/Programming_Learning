@@ -34,16 +34,22 @@ B_WHITE = "\033[47m"
 
 aluno = dict()
 while True:
+
     try:    
         aluno["nome"] = str(input(f'{BOLD}NOME:{RESET} '))    
         aluno["media"] = float(input(f'Informe a média de {aluno["nome"].title()}: '))
+
         if aluno["media"] <= 6 :
             aluno["situ"] = 'Reprovado'
         else:
             aluno["situ"] = 'Aprovado'
+
     except: 
         print(f'Informação inválida.')
+
     else:
         print(f'Valores adicionados com sucesso.')
         break
+
 print(f'O aluno {aluno["nome"].title()} Teve uma média de {aluno["media"]:.1f} e sua situação é {aluno["situ"].upper()}')
+

@@ -5,6 +5,7 @@
 # do aprendizado. Os comentários foram adicionados para explicar
 # responsabilidades e conceitos importantes sem alterar a lógica.
 # ============================================================
+
 # A classe `Pessoa` representa uma entidade/estrutura do exercício e reúne dados e comportamentos relacionados.
 class Pessoa:
     """

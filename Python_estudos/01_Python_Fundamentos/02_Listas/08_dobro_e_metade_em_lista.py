@@ -15,25 +15,37 @@
 lista_original = []
 lista_resultado = []
 
-for item in range(1, 6):#Entrada de dados com validação
-    while True:
-        entrada = input(f'Digite o {item}º número: ').strip().replace(',', '.')#Entrada STR removendo a , e colocando .
+for item in range(1, 6):
 
-        
-        if entrada.replace('.', '', 1).isdigit():#Transformando entrada em INTEIRO (removendo o . colocando ''(espaço vazio) pegando apenas o 1 (.)
-            lista_original.append(float(entrada))#Lista aprende o numero STR castando para FLOAT
-            break#Interrompe o laço
-        else:#se n for numero: 
+    while True:
+
+        # Entrada STR removendo a (,) e colocando (.)
+        entrada = input(f'Digite o {item}º número: ').strip().replace(',', '.')
+
+        # Transformando entrada em INTEIRO (removendo o . colocando ''(espaço vazio) pegando apenas o 1 (.)
+        # Lista aprende o numero STR castando para FLOAT
+        if entrada.replace('.', '', 1).isdigit():
+            lista_original.append(float(entrada))
+
+            break
+
+        # Aviso de entrada incorreta
+        else:
             print('Entrada inválida! Digite apenas números.')
 
 
-for indice, valor in enumerate(lista_original):#Achando os indices com o enumerate
-    if indice % 2 == 0:#se o indice (posição) for PAR
-        lista_resultado.append(valor * 2)#Lista de resultado ja mutiplica por 2 se for PAR
-    else:
-        lista_resultado.append(valor / 2)#Lista de resultado ja divide se for IMPAR
+# Achando os indices com o enumerate
+for indice, valor in enumerate(lista_original):
 
-# 3. Exibição dos resultados formatados
+    # Lista de resultado ja mutiplica por 2 se for PAR
+    if indice % 2 == 0:
+        lista_resultado.append(valor * 2)
+
+    # Lista de resultado ja divide se for IMPAR
+    else:
+        lista_resultado.append(valor / 2)
+
+# Exibição dos resultados formatados
 print('\n' + '='*30)
 print(f'Lista Original:  {lista_original}')
 
@@ -42,4 +54,3 @@ lista_formatada = [f"{num:.2f}" for num in lista_resultado]
 print(f'Lista Resultado: {lista_formatada}')
 print('='*30)
         
-

@@ -40,8 +40,6 @@ def validar_cpf(cpf):
         cpf_numerico = False
         print(f'Númerico: [FALSE]')
 
-    
-        
 
     # é valido ?
     cpf_valido = qnt_valida and cpf_numerico
@@ -61,3 +59,4 @@ def validar_cpf(cpf):
 entrada_cpf = input('CPF: ').strip().replace(' ','')
 
 verificacao_cpf = validar_cpf(entrada_cpf)
+

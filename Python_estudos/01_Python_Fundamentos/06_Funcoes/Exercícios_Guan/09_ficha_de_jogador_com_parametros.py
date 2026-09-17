@@ -17,7 +17,7 @@ def ficha(nome=('<DESCONHECIDO>'), gols=0):
     return (f'Jogador {pessoa["nome"].title()} fez {pessoa["gols"]} no campeonato.')
    
 
-
+# Entradas nome, quantidade de gols
 nome_input = input(f'NOME: ')
 gols_input = input(f'QUANTOS GOLS: ')
 
@@ -32,7 +32,4 @@ elif gols_input:# 3) só o GOLS foi informado
     print(ficha(gols=int(gols_input)))            
 else:
     print(ficha())    
-
-
-
 

@@ -12,7 +12,6 @@
 
 from random import randint
 
-
 # Gera/seleciona valores aleatórios conforme a proposta do exercício.
 def sorteia():
     """ Sorteia 5 números aleatórios de 1 a 100 e exibe na tela."""

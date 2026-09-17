@@ -16,7 +16,13 @@
 #Dica: o Python possui funções nativas como max(), min() e sum() que aceitam tuplas).
 
 numeros = (-12, 2, 6, 12, 5, 22, 13, -7, 2, 10 )
+
+# Exibindo o maior número da tupla com max(tupla)
 print(f'O maior numero é {max(numeros)}')
+
+# Exibindo o menor número.
 print(f'O menor numero da tupla é {min(numeros)}')
+
+# Exibindo a soma
 print(f'A soma de todos os numeros da tupla é {sum(numeros)}')
 

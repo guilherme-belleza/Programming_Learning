@@ -14,7 +14,7 @@
 #-C) Uma contagem persanolizada.
 
 
-# Tentativa com for.
+#region -Tentativa com for.
 # def contador(i, f, p):
 #     print(f'-='*30)
 #     print(f'Contador de {i} até {f} de {p} e {p}.'.replace('-' , ''))
@@ -45,7 +45,7 @@
 # contador(ini, fim, passo)
 
 
-
+#endregion
 #Tentativa com while
 
 # Executa a contagem definida pelo exercício.
@@ -75,13 +75,9 @@ def contador(i, f, p):
         print()
         print('-='*30)    
 
-
-
 # Programa Principal 
-
-
 #-C) Uma contagem persanolizada.
- #-A) de 1 até 10, de 1 em 1
+#-A) de 1 até 10, de 1 em 1
 contador(1, 10, 1)
 
 
@@ -95,3 +91,4 @@ fim = int(input(f'FIM: ').strip())
 passo = int(input(f'PASSO: ').strip())
 
 contador(ini, fim, passo)
+

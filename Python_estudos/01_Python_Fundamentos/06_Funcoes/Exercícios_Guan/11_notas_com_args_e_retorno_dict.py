@@ -40,3 +40,4 @@ def notas(* valores, sit=False):
 resultado = notas(1, 6, 88, 3 ,4,)
 
 print(resultado)
+

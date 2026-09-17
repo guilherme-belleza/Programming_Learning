@@ -100,9 +100,3 @@ while True:
         print(f'ATÉ LOGO ! ')
         break
 
-
-
-
-
-
-

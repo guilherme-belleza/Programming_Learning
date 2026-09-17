@@ -14,5 +14,5 @@ i = int(i)
 f = int(f)
 soma = 0
 for c in range(i, f+1):
-    soma += c # MEsma coisa que (soma = soma + c)
+    soma += c # Mesma coisa que (soma = soma + c)
 print(f'A soma de todos os numéros é {soma}.')

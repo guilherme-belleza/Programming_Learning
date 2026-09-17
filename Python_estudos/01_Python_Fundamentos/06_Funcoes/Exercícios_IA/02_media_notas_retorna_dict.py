@@ -25,7 +25,7 @@
 # # # Menor nota: 6
 
 
-
+#region teste comentado
 # # def calcular_media(* valores, l=None):
 # #     """Calcular média, maior, menor valor informados e salvos em uma lista
      
@@ -117,6 +117,8 @@
 
 # Retornando um dicionário 
 
+#endregion
+
 # Calcula e retorna a média a partir dos valores recebidos.
 def calcular_media(lista_notas):
     if not lista_notas:
@@ -172,6 +174,4 @@ print(f"Maior nota: {resultado['maior']}")
 # # --- Execução direta e limpa ---
 # # Basta chamar a função passando a lista como parâmetro!
 # calcular_media([8, 10, 6, 7, 9])
-
-
 

@@ -38,17 +38,20 @@ B_WHITE = "\033[47m"
 #Calcule com que idade vai se aposentar e com quantos anos.
 
 from time import sleep
-#-  Dicionário vazio
+
+
 cadastro_dict = dict()
 print(f'{UNDER}{BOLD}{PURPLE}{" ":39} ')
 print(f'{BOLD}{UNDER}{PURPLE}{B_BLACK}{"_CADASTRO_":^40}{RESET}')
 
 
-cadastro_dict["nome"] = str(input(f'NOME: ').strip().lower())#- Entrada do NOME
-cadastro_dict["ano_nascimento"] = int(input('ANO DE NASCIMENTO: ').strip())#- Entrada da data de nasc.
-cadastro_dict["idade"] = (2026 - cadastro_dict["ano_nascimento"])#- Entrada da idade (ano atual = data de nasc.)
-cadastro_dict["carteira_ctps"] = int(input(f'CTPS: ').strip())#- Entrada do nº da carteira de trabalho
+# Entrada de nome, ano, carteira ctps, e calculando idade
+cadastro_dict["nome"] = str(input(f'NOME: ').strip().lower())
+cadastro_dict["ano_nascimento"] = int(input('ANO DE NASCIMENTO: ').strip())
+cadastro_dict["idade"] = (2026 - cadastro_dict["ano_nascimento"])
+cadastro_dict["carteira_ctps"] = int(input(f'CTPS: ').strip())
 
+# Entrada de info como pede o enunciado.
 if cadastro_dict["carteira_ctps"] > 0:
     cadastro_dict["ano_contrataçao"] = int(input(f'ANO DE CONTRATAÇÃO: '))
     cadastro_dict["salario"] = float(input(f'SALÁRIO R$: '))
@@ -56,8 +59,8 @@ if cadastro_dict["carteira_ctps"] > 0:
 
     print(f'{UNDER}{BOLD}{PURPLE}{" ":39} ')
     print(f'{BOLD}{UNDER}{PURPLE}{B_BLACK}{"APOSENTADORIA":^40}{RESET}')
-    #Considerando 60 idade e 35 trabalhado
 
+    #Considerando 60 idade e 35 trabalhado
     anos_trabalhados = (2026 - cadastro_dict["ano_contrataçao"])
     print(f'==ANALISANDO==')
     sleep(1)
@@ -77,11 +80,14 @@ if cadastro_dict["carteira_ctps"] > 0:
         print(f'{UNDER}{BOLD}{PURPLE}{" ":39}{RESET} ')
         print(f'PARÁBENS !!\nCom {cadastro_dict["idade"]}anos.\nE {anos_trabalhados} anos trabalhados.\nVocê ja pode se aposentar')
         print(f'{UNDER}{BOLD}{PURPLE}{" ":39}{RESET} ')
+
+
+# Se não tem CTPS, apenas mostra os dados coletados usando recursos do dicionário
 else:
-    # Se não tem CTPS, apenas mostra os dados coletados usando recursos do dicionário
     print(f'\n{UNDER}{BOLD}{PURPLE}{" ":39} ')
     print(f'{BOLD}{UNDER}{PURPLE}{B_BLACK}{"DADOS CADASTRADOS":^40}{RESET}')
     for chave, valor in cadastro_dict.items():
         print(f'- {chave.replace("_", " ").title()}: {valor}')
 
 print(f'{UNDER}{BOLD}{PURPLE}{" ":39}{RESET} ')
+

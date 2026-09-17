@@ -11,37 +11,33 @@
 #Se o usuário digitar um número negativo, o programa deve ignorá-lo e não adicioná-lo à lista.
 #Ao final, mostre a lista resultante.
 
-lista_numeros = []#Lista
+# Iniciando uma lista vazia
+lista_numeros = [] 
 
-for item in range(1 , 9):#laço p/ 8 entradas
-    while True:#laço p/ verificação da entrada
-        entrada_numeros_str = input(f'Informe o {item}º número inteiro: ')#Entrada STR
-        if entrada_numeros_str.isdigit(): #Se a entrada for numero            
-            entrada_numeros_int = int(entrada_numeros_str)#Castando STR para INT
-            if entrada_numeros_int >= 0:#se a entrada for positiva
-                lista_numeros.append(entrada_numeros_int)#Valor da entrada vai para lista(sem os negativos)
-            break# finaliza o laço de verificação
-        else:#errou a resposta
+# Um laço com 8 entradas como pede o exercício.
+#range(1, 9) iniciando de 1 até o 8 (range desconsidera o ultímo número.)
+for item in range(1 , 9):
+
+    # Repete a entrada até o usuário informe um número inteiro válido.
+    while True:
+        entrada_numeros_str = input(f'Informe o {item}º número inteiro: ')
+
+        # Verificando se a entrada é apenas números.
+        if entrada_numeros_str.isdigit():
+
+            # Converte STR em INT   
+            entrada_numeros_int = int(entrada_numeros_str)
+
+            # Sendo possível o cast, adiciona somente os números positivos a lista
+            if entrada_numeros_int >= 0:
+                lista_numeros.append(entrada_numeros_int)
+
+            break# finaliza o laço 
+
+        # Entrada incorreta.
+        else:
             print(f'Resposta inválida. {entrada_numeros_str} não é um número inteiro.')
+
+# Resposta final do exercicío.            
 print(f'Lista e números desconsiderando os negativos ---> {lista_numeros}')
 
-
-# FEITO POR IA 
-# lista_numeros = []
-
-# for item in range(1, 9):
-#     entrada = input(f'Informe o {item}º número inteiro: ').strip()
-    
-#     # Validação: remove o "-" se existir, só para checar se o resto são dígitos
-#     if entrada.replace('-', '', 1).isdigit():
-#         numero_int = int(entrada)
-        
-#         if numero_int >= 0:
-#             lista_numeros.append(numero_int)
-#         else:
-#             print(f'O número {numero_int} é negativo e foi ignorado.')
-            
-#     else:
-#         print(f'"{entrada}" não é um número inteiro válido.')
-# print(f'\nLista resultante (sem os negativos): {lista_numeros}')
-#endregion

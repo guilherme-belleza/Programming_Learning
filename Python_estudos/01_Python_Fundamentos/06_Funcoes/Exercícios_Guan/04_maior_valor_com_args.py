@@ -8,6 +8,7 @@
 #- Função chamada maior(), receba vaários parâmetros com valores inteiros
 # - Analisar TODOS os valores e informar qual é o MAIOR.
 
+#region teste
 # def maior(*valores):
 #     maior = 0
 #     for n in valores[0]:
@@ -20,9 +21,6 @@
 
 #     print(f'Valores analisados --> {valores}\nMAIOR: {maior}')
 
-
-
-
 # valores=[]
 # cont = 0
 # r = ' '
@@ -34,6 +32,7 @@
 #         break
 
 # maior(valores)
+#endregion 
 
 from time import sleep
 
@@ -59,3 +58,4 @@ def maior(* valores):
 # - Programa principal 
 
 maior(1, -6, 7)
+

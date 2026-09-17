@@ -45,7 +45,9 @@ def leiaint():
 
 n1 = leiaint()
 print(f'Valor adicionado e verificado com sucesso.')
+
 n2 = leiaint()
 print(f'Valor adicionado e verificado com sucesso.')
 
 print(f'Os valores foram n = {n1}  e n2 = {n2}\n Podemos usalos.')
+

@@ -36,23 +36,23 @@ B_WHITE = "\033[47m"
 
 jogador = dict()
 jogador_lista = list()
+
 #Bloco de validação do NOME
-while True:    
+while True: 
+   
     print(f'{BOLD}{B_BLACK}{CYAN}={RESET}'*40)
-    nome = str(input(f'{BOLD}{CYAN}NOME DO JOGADOR:{RESET}').strip().lower())#entrada_str do nome    
-    
-    if nome.isalpha():#Verificando se é apenas letras
-        jogador["nome"] = str(nome)#se for letras, o nome vai para o dict()
+    nome = str(input(f'{BOLD}{CYAN}NOME DO JOGADOR:{RESET}').strip().lower())
+
+    if nome.isalpha():
+        jogador["nome"] = str(nome)
         print(f'{BOLD}{B_BLACK}{CYAN}={RESET}'*40)
+        print(f'NOME "{BOLD}{UNDER}{CYAN}{jogador["nome"].title()}',
+        f"({RESET}, foi cadastrado com sucesso.")
       
-        print(f'NOME "{BOLD}{UNDER}{CYAN}{jogador["nome"].title()}{RESET}", foi cadastrado com sucesso.')
-      
-        break        
-    else:#Se n for apenas letras,avisa !
-        
+        break
+
+    else:    
         print(f'{UNDER}{BOLD}{RED}Nome inválido: Inserir apenas letras.{RESET}')
-
-
 
 #-Bloco de validação quantidades de partidas.
 while True:
@@ -64,24 +64,25 @@ while True:
         jogador["qnt_partidas"] = qnt_partida
         print(f'{BOLD}{CYAN}{qnt_partida}{RESET} Partidas cadastradas.')
         break
+
     except (ValueError):
         print(f'{BOLD}{UNDER}{RED} Valor inválido, informe apenas números inteiros: ')
 
-
-
 #-Bloco de validação quantidade de gols.
+for p in range(qnt_partida):
+    while True:
 
-for p in range(qnt_partida):# para cada p na qnt de partida
-    while True:#laço para verificação
-        try:#tente
+        try:
             print(f'{BOLD}{B_BLACK}{CYAN}={RESET}'*40)
             qnt_gols = int(input(f'{BOLD}{CYAN}{B_BLACK}QUANTIDADE DE GOLS NA {p+1}º PARTIDA:{RESET} ').strip()) 
+
             print(f'{BOLD}{B_BLACK}{CYAN}={RESET}'*40)                      
             jogador[f"partida_{p+1}"] = qnt_gols
+
             print(f'{BOLD}{B_BLACK}{CYAN}{p+1}º Partida cadastrada com sucesso.{RESET}')   
             jogador_lista.append(qnt_gols)
-            #se tydo acima deu certo saia do laço infinito e volte para o FOR, para continuar as partidas
             break   
+        
         except(ValueError):
             print(f'{BOLD}{UNDER}{RED}QUANTIDADE DE GOLS INVÁLIDA!')
 

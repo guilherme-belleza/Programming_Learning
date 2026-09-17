@@ -116,7 +116,6 @@ def estastisticas(lista):
     linha()
 
 
-
 # Apresenta o menu e organiza as opções de interação do programa.
 def menu(lista):
     """
@@ -176,5 +175,4 @@ gerenciamento_usuario = []
 menu(gerenciamento_usuario)
 print(f'Finalizando o gerenciamento de usuários...')
 print(f'ATÉ LOGO.')
-
 

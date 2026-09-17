@@ -36,6 +36,3 @@ resultado = voto(ano) # Resultado recebe a função VOTO com a entrada do input 
 
 print(resultado)
 
-
-
-

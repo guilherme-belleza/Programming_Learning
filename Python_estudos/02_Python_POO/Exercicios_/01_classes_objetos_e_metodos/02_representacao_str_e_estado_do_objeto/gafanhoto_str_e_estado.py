@@ -50,7 +50,4 @@ print(g1.__getstate__())#Method; Posso personalizar o retorno
 print(g1.__class__)
 
 
-
-
-
 # print(Gafanhoto().__doc__) # Dunnder Atributte

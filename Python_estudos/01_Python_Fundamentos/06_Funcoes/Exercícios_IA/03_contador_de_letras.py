@@ -39,14 +39,13 @@ def contar_letras(palavra):
 #Entrada da palavra.
 palavra = input('Informe a palavra p/ contar as letras: ')
 
-#Contador recebe a função que vai contar as letras do que foi salvo na entrada da variavél palavra em forma de dicionário.
+# Contador recebe a função que vai contar as letras 
+# do que foi salvo na entrada em forma de dicionário.
 contador = contar_letras(palavra)
 
-for letra, qnt in contador.items():#para cada letra(key do dicionario) e qnt(valor do dicionario) do contador (dicionário q recebeu a função) 
-        print(f'{letra} = {qnt}') #Exibe os valores como o enunciado pediu
+# Para cada letra(key do dicionario) e qnt(valor do dicionario) 
+# (dicionário q recebeu a função)
+# Exibe os valores como o enunciado solicitou
+for letra, qnt in contador.items(): 
+        print(f'{letra} = {qnt}') 
 
-
-
-    
-    
-    

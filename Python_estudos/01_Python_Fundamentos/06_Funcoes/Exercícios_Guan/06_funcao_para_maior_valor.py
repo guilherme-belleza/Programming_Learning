@@ -5,3 +5,5 @@
 # do aprendizado. Os comentários foram adicionados para explicar
 # responsabilidades e conceitos importantes sem alterar a lógica.
 # ============================================================
+
+# Pendente. 

@@ -15,6 +15,7 @@
 
 lista_numeros = []
 maior = menor = 0
+
 for c in range(0, 3):
     lista_numeros.append(int(input(f'Digite o {c+1}º número: ')))
     if lista_numeros > maior:

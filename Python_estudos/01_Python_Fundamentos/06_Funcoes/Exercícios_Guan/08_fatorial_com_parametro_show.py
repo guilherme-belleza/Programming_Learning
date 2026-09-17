@@ -24,9 +24,6 @@ def fatorial (n=1, show=False):
     return f
 
 
-
 entrada_num = int(input("Calcular fatorial de : "))
 print(fatorial(entrada_num))
-
-
 

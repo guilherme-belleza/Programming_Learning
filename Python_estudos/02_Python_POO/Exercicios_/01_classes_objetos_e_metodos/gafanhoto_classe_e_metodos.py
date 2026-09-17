@@ -47,3 +47,4 @@ g3.sexo = 'M'
 g3.peso = 11
 g3.aniversario()
 print(g3.mensagem())
+

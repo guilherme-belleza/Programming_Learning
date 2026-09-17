@@ -37,7 +37,7 @@ while True:
     
 
     #- Se o TRY n deu certo, verifique os erros Type e Value e avise o usuário.
-    except(TypeError),(ValueError):
+    except(TypeError, ValueError):
         print(f'Informe apenas valores númericos.')
 
 

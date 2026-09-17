@@ -17,6 +17,7 @@
 
 lista_notas = []
 lista_media = []
+
 print('='*40)
 print(f'{'SISTEMAS DE NOTAS':^40}')
 
@@ -24,33 +25,38 @@ while True:
      #Entrada das notas e confição de parada
     print('='*40)
     print('INFORME NOTAS DE (0.0 a 10.0) ou (-1) para finalizar.')
-    entrada_notas_str = input('NOTA: ').strip().replace(',' , '.')#Trocando ',' para '.' (se houver)
-    
-     #Verificando se a resposta é a condição de parada (ainda em STR)
+
+    entrada_notas_str = input('NOTA: ').strip().replace(',' , '.')
+
+    #Verificando se a resposta é a condição de parada (ainda em STR)
     if entrada_notas_str == '-1':
         print('Finalizando o SISTEMA')
         break
     
     #Convertendo a entrada STR em apenas numeros sem ponto
-    notas_semponto = entrada_notas_str.replace('.','',1)#replace vai procurar o 1º'.' e trocar por ''(vazio/nada) 
-    
-    if notas_semponto.isdigit():#Se for apenas numericos
-        notas_semponto = float(entrada_notas_str)# notas_semponto recebe o valor castado em FLOAT
+    # replace vai procurar o 1º'.' e trocar por ''(vazio/nada)
+    notas_semponto = entrada_notas_str.replace('.','',1)
 
+    # Se for apenas digitos, converte em floar.
+    if notas_semponto.isdigit():
+        notas_semponto = float(entrada_notas_str)
         if notas_semponto <= 10:        
-            lista_notas.append(notas_semponto)#Lista aprende os valores validos
+            lista_notas.append(notas_semponto)
         else:
             print(f'Valor inválido.')
 
-
-    else:# se n for só numerico
+    # Caso não for apenas digitos 
+    else:
         print('Informe apenas numeros de (0.0 a 10.00).')
 
-for nota in lista_notas:# para cada nota na lista
-    if nota >= 7:#Verifica se a nota é maior q 7 
-        lista_media.append(nota)#Adiciona a uma lista
+
+# Resultado do exercicio.
+for nota in lista_notas:
+    if nota >= 7:
+        lista_media.append(nota)
 
 print(f'Foram informadas {len(lista_notas)} de notas.\nNOTAS |----> {lista_notas}')
 media = sum(lista_notas) / len(lista_notas)
 print(f'A Média da turma foi {media:.1f}')#Ajuste para 1 casa decimal
 print(f'Alunos que que ficaram acima da media {len(lista_media)} alunos.')
+

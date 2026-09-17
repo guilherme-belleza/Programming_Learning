@@ -26,17 +26,14 @@ while True:
         print('-='*30)
         nome = str(input('NOME: ').strip())
 
-        #se nome sem espaços (replace) é apenas letras:
+        # se nome sem espaços e apenas letras:
+        # O nome é adicionádo ao dicionário.
         if nome.replace(' ','').isalpha():
-
-            #O nome é adicionádo ao dicionário.
             dict_temp["nome"] = nome.title()
             print('-='*30)
             print(f'O nome --> "{dict_temp["nome"]}" Cadastrado com sucesso. ')
+            break
 
-            
-            break#fim do laço de verificação
-        #se ñ for apenas letras.
         else:
             print('-='*30)
             print(f'"NOME" iválido, informe apenas letras.')
@@ -44,14 +41,17 @@ while True:
     #- Bloco de verificação do SEXO.
     while True:
         print('-='*30)
-        sexo = str(input(f'SEXO: ').strip().upper()[0])#sem espaços, e pegando a 1º letra em maiusculo.
+        sexo = str(input(f'SEXO: ').strip().upper()[0])
+
         if sexo in 'MF':
             dict_temp["sexo"] = sexo
             print('-='*30)
             print(f'Sexo {dict_temp["sexo"]} cadastrado com sucesso.')
+
             if sexo == 'F':
                 lista_mulheres.append(dict_temp["nome"])
             break
+
         else:
             print('-='*30)
             print(f'"SEXO" inválido, informe [M/F].')
@@ -74,20 +74,24 @@ while True:
     while True:
         print('-='*30)
         r = str(input('CONTINUAR? [S/N]: ').strip().upper()[0])
-        if r in 'SN':#Aqui verifica se digitou certo [S ou N]
-           break#para a verificação (como a resposta n foi == N) o if la de baixo n roda e continua o cadastro
-    else:# Esse else está alinhado com o while True: da validação e não com o IF
+
+        if r in 'SN':#
+           break
+
+    else:
         print(f'Resposta inválida, informe apenas [S/N].')
 
     if r == 'N':
         print(f'Encerrando cadastro.')
         print('-='*30)
 
-        break#Esse para o 1 laço.
+        break
+
           
 #- Resultado
 print(f'Quantidade de pessoas cadastradas ---> {len(pessoas)} ')
 print('-='*30)
+
 # - Media da idade
 lista_total_idade = []
 
@@ -99,9 +103,8 @@ print(f'A média de todas as idade foi de: {media:.2f}')
 print('-='*30)
 print(f'Lista com as mulheres: {lista_mulheres}')
 
-#para cada dicionário em pessoas (p aqui vale 1 dicionário completo)
-for p in pessoas:
-    if p["idade"] > media:#se o p["idade"] vai procurar o valor da chave ["idade"]
-        #Printamos na tela o nome e a idade direto!
-        print(f'   -> {p["nome"]} tem {p["idade"]} anos.')#Podemos imprimir na tela pelas keys do dicionario.
 
+for p in pessoas:
+    if p["idade"] > media:
+        print(f'   -> {p["nome"]} tem {p["idade"]} anos.')
+        

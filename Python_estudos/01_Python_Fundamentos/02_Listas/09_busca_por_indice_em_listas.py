@@ -27,3 +27,4 @@ if aluno in lista_nomes:
     print(f'O aluno {aluno} está na lista.')   
 else:
     print(f'O "{aluno}" informado não esta na lista.')
+
