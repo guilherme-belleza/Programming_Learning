@@ -8,21 +8,14 @@
 from rich import print as rprint
 from rich.table import Table
 
-tabela = Table(title='⨚_†HELL†_⨙ ', style="bold red")
+# Testando exibição de caracteres no terminal.
+tabela = Table(title='⨚_†TITULO†_⨙ ', style="bold red")
 tabela.add_column(" _₼_[bold italic]NOME[/]_₼_", justify='center',)         # ⩙ ⨁ ⨷ ⨴ ⨖ † ૱ ¥ ₰ ₼
-tabela.add_column("†_PECADO_†", justify='center', style="black")
+tabela.add_column("†_AÇÃO_†", justify='center', style="black")
 
-tabela.add_row('Yeshua', 'G⨁D')
-
-
-
+tabela.add_row('JOÃO', 'CORREU')
 
 rprint(tabela)
-
-
-
-
-
 
 
 # from rich.console import Console
