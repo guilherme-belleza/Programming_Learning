@@ -9,8 +9,25 @@ from carteira_property import *
 
 # Função principal: organiza a execução do programa e chama as partes necessárias para realizar o exercício.
 def main():
-    a = Carteira()
-    a.saldo = 3000
+
+    c1 = Carteira(100)
+    c2 = Carteira(100)
+
+    # Operadores subistituidos com método mágico __metodo__
+
+    # __eq__ igual 
+    print(c1==c2) 
+
+    
+    # p1.__iadd__(p2) +=
+    c1 += 6 
+    print(c1)
+
+    # p1.__isub__(p2) -=
+    c2 -= 10
+    print(c2)
+
+
 
 if __name__ == "__main__":
     main()

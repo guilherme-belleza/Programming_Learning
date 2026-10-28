@@ -9,21 +9,31 @@ Aqui estão reunidos exercícios, desafios, anotações e experimentos desenvolv
 ### Python Fundamentos
 
 * `Python_estudos/01_Python_Fundamentos/02_Listas` — listas e operações com listas
+
 * `Python_estudos/01_Python_Fundamentos/03_Lacos_For_While` — `for`, `while` e `range`
+
 * `Python_estudos/01_Python_Fundamentos/04_Dicionarios` — dicionários e tratamento de exceções relacionado
+
 * `Python_estudos/01_Python_Fundamentos/05_Tuplas` — tuplas, ordenação e `lambda`
+
 * `Python_estudos/01_Python_Fundamentos/06_Funcoes` — funções, parâmetros, retorno, `*args`, validações e pequenos sistemas
 
 ### Programação Orientada a Objetos
 
 * `Python_estudos/02_Python_POO/Exercicios_` — exercícios organizados pelo conceito principal de POO praticado
+
 * `Python_estudos/02_Python_POO/Desafios_` — desafios com o tema principal indicado no nome
+
 * `Python_estudos/02_Python_POO/Rich_Lib` — estudos e experimentos com a biblioteca Rich
 
 ### Python Arquivos e Dados
 
 * `Python_estudos/03_Python_Arquivos_Dados/open_arquivos` — estudos sobre leitura e escrita de arquivos utilizando `open()`
+
 * `Python_estudos/03_Python_Arquivos_Dados/pathlib` — estudos sobre caminhos, arquivos e diretórios utilizando `pathlib`
+
+* `Python_estudos/03_Python_Arquivos_Dados/exportar_JSON_XML` — estudos sobre serialização e exportação de objetos para os formatos JSON e XML
+
 
 ## 🎯 Organização
 
@@ -59,5 +69,10 @@ Este repositório possui **finalidade educacional** e representa meu processo de
 Além do Curso em Vídeo, este repositório também reúne conteúdos estudados através de documentação, pesquisas, experimentos próprios e outras fontes utilizadas durante o aprendizado.
 
 ---
+## ⚠️ Arquivos semelhantes
+>Alguns arquivos podem abordar conteúdos semelhantes, mas permanecer separados quando possuem objetivos didáticos ou enfoques diferentes, funcionando como referências complementares.
+Quando houver duplicação de conteúdo sem diferenças relevantes, será priorizada a manutenção de uma única cópia para evitar redundâncias desnecessárias.
+
 
 > 📌 **Este repositório está em constante evolução conforme avanço nos estudos de programação.**
+

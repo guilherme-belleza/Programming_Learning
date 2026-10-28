@@ -30,7 +30,7 @@ Você não precisa dominar todos os tópicos antes de avançar. O objetivo desta
 Os nomes dos arquivos foram padronizados para que o assunto seja identificável sem precisar abrir o arquivo. O conteúdo original foi preservado, com pequenas adições somente quando ajudam na organização ou no estudo.
 
 ## ⚠️ Arquivos semelhantes
+>Alguns arquivos podem abordar conteúdos semelhantes, mas permanecer separados quando possuem objetivos didáticos ou enfoques diferentes, funcionando como referências complementares.
 
-Havia dois arquivos de comprehensions com o mesmo conteúdo. Mantive apenas uma cópia para evitar duplicação.
 
-Os materiais de `pip/venv` e `virtualenv/venv` foram mantidos separados porque têm enfoques diferentes e podem funcionar como referências complementares.
+> 📌 **Este repositório está em constante evolução conforme avanço nos estudos de programação.**
